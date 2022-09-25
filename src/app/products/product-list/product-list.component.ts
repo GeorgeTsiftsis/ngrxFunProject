@@ -16,7 +16,7 @@ export class ProductListComponent {
   @Input() displayCode: boolean;
   @Input() selectedProduct: Product;
   @Output() displayCodeChanged = new EventEmitter<boolean>();
-  @Output() initiliazeNewProduct = new EventEmitter<void>();
+  @Output() initializeNewProduct = new EventEmitter<void>();
   @Output() productWasSelected = new EventEmitter<Product>();
 
   checkChanged(): void {
@@ -24,7 +24,7 @@ export class ProductListComponent {
   }
 
   newProduct(): void {
-    this.initiliazeNewProduct.emit();
+    this.initializeNewProduct.emit();
   }
   productSelected(product: Product): void {
     this.productWasSelected.emit(product);
