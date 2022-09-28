@@ -11,7 +11,7 @@ import { NumberValidators } from '../../shared/number.validator';
 })
 export class ProductEditComponent implements OnInit, OnChanges {
   pageTitle = 'Product Edit';
-   @Input() errorMessage: string;
+  @Input() errorMessage: string;
   @Input() selectedProduct: Product;
   @Output() create = new EventEmitter<Product>();
   @Output() update = new EventEmitter<Product>();
@@ -106,7 +106,7 @@ export class ProductEditComponent implements OnInit, OnChanges {
 
   deleteProduct(): void {
     if (this.selectedProduct && this.selectedProduct.id) {
-      if (confirm(`Really delete the product: ${this.selectedProduct.productName}?`)) {
+      if (confirm(`Are you sure that you want to remove: ${this.selectedProduct.productName}?`)) {
         this.delete.emit(this.selectedProduct);
       }
     } else {
