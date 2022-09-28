@@ -1,2 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
+
+
+li {
+  font-size: large;
+}
+
+div.panel-heading {
+ font-size: x-large;
+}
+
+body {
+margin-top: 50px;
+}
+
+.size {
+  font-size:1rem;
+}
+
+.purplecolor {
+  background-color: rgb(76, 49, 79);
+}
+
+.mw {
+  max-width: 800px;
+
+}
+
+.sm-size{
+  font-size:0.8rem
+}
